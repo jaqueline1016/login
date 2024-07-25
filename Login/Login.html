@@ -1,0 +1,99 @@
+ <!-- https://getbootstrap.com/docs/5.3/forms/layout/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Login Page</title>
+    <!--Link de Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!--Imagen de fondo-->
+  <body style="background-image: url('Imagen/back.png'); background-size: cover; background-position: center center;" class="d-flex justify-content-center align-items-center vh-100">
+    <!--Primer Cuadro morado-->
+    <div class="p-5 rounded-5 text-secondary shadow" style="background-color: #7796E1;width: 30rem; display: flex; justify-content: center; align-items: center;">
+      <!--Segundo Cuadro rosado-->
+      <div class=" p-5 rounded-5 text-secondary shadow" style="background-color: #BCCDF9;width: 30rem;">
+        <!--LOGIN-->
+        <div class="text-center fs-1 fw-semibold fst-italic"style="color: black;">LOGIN</div>
+        <div class="input-group mt-4">
+          <div class="input-group-text "style="background-color:#7796E1 ">
+            <!--icono de usuario-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+          </div>
+          <input
+            class="form-control bg-light"
+            type="text"
+            placeholder="Username" 
+          />
+        </div>
+        <div class="input-group mt-1">
+          <div class="input-group-text" style="background-color: #7796E1">
+            <!--icono de llave-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+          </div>
+          <input
+            class="form-control bg-light"
+            type="password"
+            placeholder="Password"
+          />
+        </div>
+        <!--Remember me-->
+        <div class="d-flex justify-content-around mt-1">
+          <div class="d-flex align-items-center gap-1">
+            <input class="form-check-input" type="checkbox" />
+            <div class="pt-1" style="font-size: 0.9rem">Remember me</div>
+          </div>
+          <!--Forgot your password-->
+          <div class="pt-1">
+            <a
+              href="#"
+              class="text-decoration-none text-black fw-semibold fst-italic"
+              style="font-size: 0.9rem"
+              >Forgot your password?</a
+            >
+          </div>
+        </div>
+        <!--Login boton-->
+        <div class="btn  text-black w-100 mt-4 fw-bold  shadow-sm"style="background-color:#7796E1">
+          LOGIN
+        </div>
+        <div class="d-flex gap-1 justify-content-center mt-1">
+          <!--Don't have an account?-->
+          <div>Don't have an account?</div>
+          <!--Register-->
+          <a href="#" class="text-decoration-none text-black fw-semibold"
+            >Register</a
+          >
+        </div>
+        <div class="p-3">
+          <div class="border-bottom gap-1  text-center" style="height: 0.9rem">
+            <span class=" px-3" style="background-color: #BCCDF9">or</span>
+          </div>
+        </div>
+        <div class="btn bg-white d-flex gap-2 justify-content-center border mt-3 shadow-sm">
+          <!--icono de google-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-google" viewBox="0 0 18 18">
+              <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+            </svg>
+            <!--Register-->
+            <div class="fw-semibold text-secondary align-self-center">Continue with Google</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
